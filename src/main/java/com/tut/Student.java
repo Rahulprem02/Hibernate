@@ -35,9 +35,14 @@ public class Student {
 
     }
 
-    public String tString(){
-        return this.id + ":"+ this.name + ":"+ this.city;
-    }
+    // public String tString(){
+    //     return this.id + ":"+ this.name + ":"+ this.city;
+    // }
+
+    
+public String toString() {
+     return this.id + ":"+ this.name + ":"+ this.city;
+}
 
     
     
