@@ -10,6 +10,8 @@ public class Student {
     private String name;
     private String city;
 
+    private Certificate cert;
+
 
     public int getId() {
         return id;
@@ -30,18 +32,23 @@ public class Student {
         this.city = city;
     }
 
+    
+
     public Student()
     {
 
     }
 
-    // public String tString(){
-    //     return this.id + ":"+ this.name + ":"+ this.city;
-    // }
-
+   
     
 public String toString() {
      return this.id + ":"+ this.name + ":"+ this.city;
+}
+public Certificate getCert() {
+    return cert;
+}
+public void setCert(Certificate cert) {
+    this.cert = cert;
 }
 
     
