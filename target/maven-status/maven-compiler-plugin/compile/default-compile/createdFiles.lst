@@ -1,6 +1,9 @@
 com\tut\Address.class
+com\map\MapDemo.class
 com\tut\Student.class
+com\map\Answer.class
 com\tut\EmDemo.class
+com\map\Question.class
 com\tut\Certificate.class
 com\tut\FetchDemo.class
 com\tut\App.class

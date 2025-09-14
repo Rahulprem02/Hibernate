@@ -15,6 +15,7 @@
        <property name="show_sql">true</property>
        <mapping class="com.tut.Student"/>
        <mapping class="com.tut.Address"/>
-
+       <mapping class="com.map.Answer"/>
+       <mapping class="com.map.Question"/>
     </session-factory>
 </hibernate-configuration>
