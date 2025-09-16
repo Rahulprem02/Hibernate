@@ -65,8 +65,9 @@ public class MapDemo {
 
 
 
-
-       factory.close();
+       s.close();
+      factory.close();
+     
 
 
 
