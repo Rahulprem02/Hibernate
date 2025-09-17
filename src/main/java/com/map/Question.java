@@ -2,6 +2,7 @@ package com.map;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
@@ -20,7 +21,7 @@ public class Question {
 
     // @OneToOne(cascade = CascadeType.ALL)
     // private Answer answer;
-    @OneToMany
+    @OneToMany(fetch = FetchType.EAGER)
     private List<Answer> answers;
 
     public int getQuestionId() {
