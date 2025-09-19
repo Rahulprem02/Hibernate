@@ -1,5 +1,6 @@
 com\map1\Project.class
 com\tut\Address.class
+com\hql\HQLExample.class
 com\map1\MappingDemo.class
 com\map\Answer.class
 com\tut\EmDemo.class

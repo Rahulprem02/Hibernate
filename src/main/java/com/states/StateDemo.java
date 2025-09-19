@@ -15,26 +15,34 @@ public class StateDemo {
         SessionFactory f = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
     
         // Create student object
-        Student student = new Student();
-        student.setId(122);
-        student.setName("Peter");
-        student.setCity("ABC");   
+        // Student student = new Student();
+        // student.setId(122);
+        // student.setName("Peter");
+        // student.setCity("ABC");   
 
-        student.setCert(new Certificate("Java Hibbernate", "2 month"));
+        // student.setCert(new Certificate("Java Hibbernate", "2 month"));
+
+
+        Student student1 = new Student();
+        student1.setId(120);
+        student1.setName("Peter");
+        student1.setCity("Karachi");   
+
+        student1.setCert(new Certificate("Python", "3 month"));
         //Student : Transient 
 
         Session s = f.openSession();
         Transaction tx = s.beginTransaction();
-        s.save(student);
+        // s.save(student);
+        s.save(student1);
         // Object associated with object and data insert 
         //Student : Persistent 
 
-        student.setName("John");
+       
         
         tx.commit();
         s.close();
         // Detached State session closed.
-        student.setName("Adam");
 
 
         f.close();
