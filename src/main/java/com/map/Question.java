@@ -21,7 +21,7 @@ public class Question {
 
     // @OneToOne(cascade = CascadeType.ALL)
     // private Answer answer;
-    @OneToMany(fetch = FetchType.EAGER)
+    @OneToMany(fetch = FetchType.LAZY, cascade =  CascadeType.ALL)
     private List<Answer> answers;
 
     public int getQuestionId() {

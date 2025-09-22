@@ -23,5 +23,8 @@
        <mapping class="com.map1.Project"/>
        <mapping class="com.states.StateDemo"/>
        <mapping class="com.hql.HQLExample"/>
+       <mapping class="com.sqlquery.SQLExample"/>
+       <mapping class="com.cascading.CascadeExample"/>
+
     </session-factory>
 </hibernate-configuration>
