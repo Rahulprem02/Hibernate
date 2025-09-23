@@ -25,6 +25,8 @@
        <mapping class="com.hql.HQLExample"/>
        <mapping class="com.sqlquery.SQLExample"/>
        <mapping class="com.cascading.CascadeExample"/>
+       <mapping class="com.caching.CacheFirstLevel"/>
+       <mapping class="com.caching.CacheSecondLevel"/>
 
     </session-factory>
 </hibernate-configuration>
