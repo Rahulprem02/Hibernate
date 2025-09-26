@@ -6,22 +6,25 @@ import org.hibernate.cfg.Configuration;
 
 import com.tut.Student;
 
+
 public class CacheSecondLevel {
 
     public static void main(String[] args) {
-      SessionFactory factory =    new Configuration().configure().buildSessionFactory();
-      Session session = factory.openSession();
 
-      Student student = session.get(Student.class, 12424);
-      System.out.println(student);
+      SessionFactory factory = new Configuration().configure().buildSessionFactory();
+      Session session1 = factory.openSession();
 
-      System.out.println("Working student ");
-
-      Student student1 = session.get(Student.class, 12424);
+      Student student1 = session1.get(Student.class,12424);
+      //First level
       System.out.println(student1);
 
+      session1.close();
 
-      session.close();
+      Session session2 = factory.openSession();
+
+      Student student2 = session2.get(Student.class,12424);
+      System.out.println(student2);
+
       factory.close();
 
     }
