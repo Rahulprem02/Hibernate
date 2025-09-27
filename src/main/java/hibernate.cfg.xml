@@ -29,6 +29,7 @@
        <mapping class="com.cascading.CascadeExample"/>
        <mapping class="com.caching.CacheFirstLevel"/>
        <mapping class="com.caching.CacheSecondLevel"/>
+       <mapping resource="com/mappingXML/Person.hbm.xml" />
 
     </session-factory>
 </hibernate-configuration>
